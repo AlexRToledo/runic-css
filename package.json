@@ -1,0 +1,28 @@
+{
+  "name": "runic-css",
+  "version": "0.0.1",
+  "description": "Runic CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexRToledo/runic-css.git"
+  },
+  "keywords": [
+    "runic",
+    "css",
+    "framework"
+  ],
+  "author": "Alejandro Rodriguez Toledo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexRToledo/runic-css/issues"
+  },
+  "homepage": "https://github.com/AlexRToledo/runic-css#readme",
+  "devDependencies": {
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  }
+}
