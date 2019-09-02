@@ -1,2 +1,10 @@
 @import './_text/main';
 @import './_colors/main';
+
+.a {
+    color: red;
+}
+
+body {
+    color: green($color: #000000);
+}
