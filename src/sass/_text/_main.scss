@@ -1,0 +1,37 @@
+html {
+    font-size: 14px
+}
+
+.title {
+    font-size: 2rem;
+    margin-top: 0px;
+    margin-bottom: 1.5rem;
+
+    &.ft-1 {
+        font-size: 3.75rem
+    }
+    
+    &.ft-2 {
+        font-size: 3.25rem
+    }
+    
+    &.ft-3 {
+        font-size: 2.75rem
+    }
+    
+    &.ft-4 {
+        font-size: 2.25rem
+    }
+    
+    &.ft-5 {
+        font-size: 1.75rem
+    }
+    
+    &.ft-6 {
+        font-size: 1.5rem
+    }
+}
+
+p {
+    font-size: 1rem
+}
