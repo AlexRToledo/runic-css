@@ -1,0 +1,65 @@
+$fire-color: #ed6d79;
+$water-color: #90d4f7;
+$grass-color: #71e096;
+$sun-color: #ffdc89;
+
+$primal-color: #898cff;
+$secondary-color: #b5bdc4;
+
+//Color for texts
+.text-danger {
+    color: $fire-color;
+}
+
+.text-info {
+    color: $water-color;
+}
+
+.text-success {
+    color: $grass-color;
+}
+
+.text-warning {
+    color: $sun-color;
+}
+
+.text-primary {
+    color: $primal-color;
+}
+
+.text-secondary {
+    color: $secondary-color;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-dark {
+    color: #000;
+}
+
+//Color for Background 
+.bg-danger {
+    background-color: $fire-color;
+}
+
+.bg-info {
+    background-color: $water-color;
+}
+
+.bg-success {
+    background-color: $grass-color;
+}
+
+.bg-warning {
+    background-color: $sun-color;
+}
+
+.bg-primary {
+    background-color: $primal-color;
+}
+
+.bg-secondary {
+    background-color: $secondary-color;
+}
