@@ -34,27 +34,40 @@
 
 //Justifiy Content
 
-.flex-jc-center {
+.justify-center {
     justify-content: center;
 }
 
-.flex-jc-around {
+.justify-around {
     justify-content: space-around;
 }
 
-.flex-jc-evenly {
+.justify-evenly {
     justify-content: space-evenly;
 }
 
-.flex-jc-between {
+.justify-between {
     justify-content: space-between;
 }
 
-.flex-jc-start {
+.justify-start {
     justify-content: flex-start;
 }
 
-.flex-jc-end {
+.justify-end {
     justify-content: flex-end;
+}
+
+//Align items
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
 }
 

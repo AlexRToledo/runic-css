@@ -1,0 +1,52 @@
+.button {
+    padding: .5rem .75rem;    
+    border: 1px solid transparent;
+    border-radius: .15rem;
+    color: #fff;
+    transition: .2s ease;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.primary {
+        background-color: $primal-color;
+        &:hover {
+            background-color: $primal-color-dark;
+        }                
+    }
+    &.secondary {
+        background-color: $secondary-color;
+        &:hover {
+            background-color: $secondary-color-dark;
+        }        
+    }
+    &.success {
+        background-color: $grass-color;
+        &:hover {
+            background-color: $grass-color-dark;
+        }          
+    }
+    &.warning {
+        background-color: $sun-color;        
+        &:hover {
+            background-color: $sun-color-dark;
+        }  
+    }
+    &.info {
+        background-color: $water-color;        
+        &:hover {
+            background-color: $water-color-dark;
+        }  
+    }
+    &.danger {
+        background-color: $fire-color;        
+        &:hover {
+            background-color: $fire-color-dark;
+        }  
+    }
+
+    &.rounded {
+        border-radius: 3rem;
+    }
+}
