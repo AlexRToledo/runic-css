@@ -1,3 +1,30 @@
+/// Set visual color button
+/// @param {Color} $first-color
+/// @param {Color} $second-color
+@mixin setButtonColor($first-color, $second-color) {
+    background-color: $first-color;        
+        &:hover {
+            background-color: $second-color;
+        }  
+        &-outline {
+            background-color: transparent;
+            border-color: $first-color;
+            color: $first-color;
+            &:hover {
+                background-color: $second-color;
+                color: #fff;
+            }
+        }
+        &-link {
+            background-color: transparent;            
+            color: $first-color;
+            &:hover {
+                background-color: $second-color;
+                color: #fff;
+            }
+        } 
+}
+
 .button {
     padding: .5rem .75rem;    
     border: 1px solid transparent;
@@ -10,40 +37,25 @@
     }
 
     &.primary {
-        background-color: $primal-color;
-        &:hover {
-            background-color: $primal-color-dark;
-        }                
+        @include setButtonColor($primal-color, $primal-color-dark);                    
     }
     &.secondary {
-        background-color: $secondary-color;
-        &:hover {
-            background-color: $secondary-color-dark;
-        }        
+        @include setButtonColor($secondary-color, $secondary-color-dark);         
     }
     &.success {
-        background-color: $grass-color;
-        &:hover {
-            background-color: $grass-color-dark;
-        }          
+        @include setButtonColor($grass-color, $grass-color-dark);
     }
     &.warning {
-        background-color: $sun-color;        
-        &:hover {
-            background-color: $sun-color-dark;
-        }  
+        @include setButtonColor($sun-color, $sun-color-dark);
     }
     &.info {
-        background-color: $water-color;        
-        &:hover {
-            background-color: $water-color-dark;
-        }  
+        @include setButtonColor($water-color, $water-color-dark);
     }
     &.danger {
-        background-color: $fire-color;        
-        &:hover {
-            background-color: $fire-color-dark;
-        }  
+        @include setButtonColor($fire-color, $fire-color-dark);
+    }
+    &.dark {
+        @include setButtonColor($dark-color, $dark-color-dark);        
     }
 
     &.rounded {
