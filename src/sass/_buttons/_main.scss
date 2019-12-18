@@ -12,7 +12,7 @@
             color: $first-color;
             &:hover {
                 background-color: $second-color;
-                color: #fff;
+                color: $white-color;
             }
         }
         &-link {
@@ -20,7 +20,7 @@
             color: $first-color;
             &:hover {
                 background-color: $second-color;
-                color: #fff;
+                color: $white-color;
             }
         } 
 }
@@ -29,8 +29,10 @@
     padding: .5rem .75rem;    
     border: 1px solid transparent;
     border-radius: .15rem;
-    color: #fff;
-    transition: .2s ease;
+    color: $white-color;
+    transition: .3s ease-in-out;
+
+    @include setButtonColor($primal-color, $primal-color-dark);
 
     &:hover {
         cursor: pointer;

@@ -12,6 +12,7 @@ $secondary-color: #b5bdc4;
 $secondary-color-dark: #acb3b9;
 $dark-color: #3c3c3c;
 $dark-color-dark: #000;
+$white-color: #fff;
 
 //Color for texts
 .text-danger {
@@ -39,11 +40,11 @@ $dark-color-dark: #000;
 }
 
 .text-white {
-    color: #fff;
+    color: $white-color;
 }
 
 .text-dark {
-    color: #000;
+    color: $dark-color;
 }
 
 //Color for Background 
