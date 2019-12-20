@@ -1,17 +1,60 @@
 h2.title.ft-2 Forms
 
-.flex.flex-d-col
-    div
-        h6.title.ft-5 Input        
-        input.input(type="text" placeholder="Label field")
-    br
-    div
-        h6.title.ft-5 Form fields
-        .form-field
-            label.title(for="fieldone") Label field
-            input.input#fieldone(type="text")
-        .form-field-inline
-            label.title(for="fieldone") Label field
-            input.input#fieldone(type="text")
-    
-             
+.flex.flex-d-col    
+   ul
+        li
+            h6.title.ft-6 Inputs and Text Areas
+            .field
+                input.input(type="text" placeholder="Label field")
+            .field
+                label.label(for="fieldone") Label field
+                input.input#fieldone(type="text")
+            .field-inline
+                label.label(for="fieldone") Label field
+                input.input#fieldone(type="text")
+            .field-inline
+                label.label(for="fieldone") Label field
+                input.input#fieldone(type="text") 
+            .field
+                label.label(for="fieldone") Label field
+                textarea.textarea#fieldone(name="", cols="30", rows="10")
+            .field-inline
+                label.label(for="fieldone") Label field
+                textarea.textarea#fieldone(name="", cols="30", rows="10")                       
+        li
+            h6.title.ft-6 Selects
+            .field
+                label.label(for="fieldone") Label field
+                select.select(name="option")
+                    option(selected disabled) Select an option
+                    option(value="option1") Option 1
+                    option(value="option2") Option 2
+                    option(value="option3") Option 3
+            .field-inline
+                label.label(for="fieldone") Label field
+                select.select(name="option")
+                    option(selected disabled) Select an option
+                    option(value="option1") Option 1
+                    option(value="option2") Option 2
+                    option(value="option3") Option 3
+            .field
+                label.label(for="fieldone") Label field
+                select.select(name="option" multiple)
+                    option(selected disabled) Select an option
+                    option(value="option1") Option 1
+                    option(value="option2") Option 2
+                    option(value="option3") Option 3 
+        li
+            h6.title.ft-6 Checkbox and Radios                
+            .field
+                label.label(for="fieldone") Label field
+                input.checkbox#fieldone(type="checkbox")
+            .field-inline
+                label.label(for="fieldone") Label field
+                input.checkbox#fieldone(type="checkbox")    
+            .field                
+                label.label(for="fieldone") Label field                
+                input.radio#fieldone(type="radio")
+            .field-inline
+                input.radio#fieldone(type="radio") 
+                label.label(for="fieldone") Label field                                          

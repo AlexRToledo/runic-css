@@ -32,8 +32,6 @@
     color: $white-color;
     transition: .3s ease-in-out;
 
-    @include setButtonColor($primal-color, $primal-color-dark);
-
     &:hover {
         cursor: pointer;
     }
