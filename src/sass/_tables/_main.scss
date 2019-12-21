@@ -1,0 +1,37 @@
+/// Set table
+/// @param {String} $color
+/// @param {Number} $border-bottom
+/// @param {Number} $border-right
+/// @param {String} $text-align
+/// @param {String} $border-type
+@mixin setTable($color, $border-bottom, $border-right, $border-type, $text-align) {
+    border: 1px $border-type $color; 
+    border-collapse: collapse;       
+    thead {
+       tr {           
+           th {
+                text-align: $text-align;
+                padding: .5rem;
+                border-bottom: $border-bottom $border-type $color;
+                border-right: $border-right $border-type $secondary-color;
+           }
+       }
+    }
+    tbody {
+        tr {            
+            td {
+                text-align: $text-align;
+                padding: .5rem;
+                border-bottom: $border-bottom $border-type $color;
+                border-right: $border-right $border-type $color;
+            }
+        }
+    }
+}
+
+.table {
+    @include setTable($secondary-color, 1px, 0px, solid, left);
+    &-bordered {
+        @include setTable($secondary-color, 1px, 1px, solid, left);
+    }
+}
