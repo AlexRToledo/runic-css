@@ -25,13 +25,44 @@
                 border-bottom: $border-bottom $border-type $color;
                 border-right: $border-right $border-type $color;
             }
+        }        
+    }
+}
+
+/// Set table hover
+/// @param {String} $background-color
+/// @param {String} $text-color
+@mixin setBorder($background-color, $text-color) {
+    &.hovered {
+        tbody {
+            tr:hover {
+                background-color: $background-color;
+                color: $text-color;
+            }
+        }
+    }
+}
+
+@mixin setStripe($background-color-even, $background-color-odd) {
+    &.striped {
+        tbody {
+            tr:nth-child(even) {
+                background: $background-color-even;
+            }
+            tr:nth-child(odd) {
+                background: $background-color-odd;
+            }
         }
     }
 }
 
 .table {
-    @include setTable($secondary-color, 1px, 0px, solid, left);
+    @include setTable($secondary-color, 1px, 0px, solid, left);    
+    @include setStripe($white-color, $secondary-color);
+    @include setBorder($primal-color, $white-color);
     &-bordered {
-        @include setTable($secondary-color, 1px, 1px, solid, left);
+        @include setTable($secondary-color, 1px, 1px, solid, left);        
+        @include setStripe($white-color, $secondary-color);
+        @include setBorder($primal-color, $white-color);
     }
 }
