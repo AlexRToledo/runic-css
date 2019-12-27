@@ -1,0 +1,24 @@
+.card {
+    border: 1px solid $secondary-color;
+    border-radius: .15rem;
+    padding: 1rem;
+    .card-header {        
+        .title, .subtitle {
+            margin: 0rem .5rem 0rem .25rem;           
+        }                
+    }
+    .card-content, .card-footer {
+        margin: .5rem 0rem;           
+    }
+    .card-header, .card-content, .card-footer {
+        &-bordered {
+            border-bottom: 1px solid $secondary-color;
+            .title, .subtitle {
+                margin: 0rem .5rem 0rem .25rem;                     
+            }
+            .subtitle {
+                padding-bottom: .25rem;
+            }
+        }
+    }        
+}

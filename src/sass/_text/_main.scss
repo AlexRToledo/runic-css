@@ -2,36 +2,56 @@ html {
     font-size: 14px
 }
 
-.title {
-    font-size: 1rem;
-    margin-top: 0px;
-    margin-bottom: 1.5rem;
-
-    &.ft-1 {
-        font-size: 3rem
-    }
-    
-    &.ft-2 {
-        font-size: 2.75rem
-    }
-    
-    &.ft-3 {
-        font-size: 2.5rem
-    }
-    
-    &.ft-4 {
-        font-size: 2rem
-    }
-    
-    &.ft-5 {
-        font-size: 1.75rem
-    }
-    
-    &.ft-6 {
-        font-size: 1.5rem
-    }
-}
-
 p {
     font-size: 1rem
+}
+
+.title {    
+    margin-top: 0px;      
+}
+
+.subtitle {    
+    color: $secondary-color-dark;
+    font-weight: bold;
+    margin: 0px;
+}
+
+h1, .ft-1 {
+    font-size: 3rem
+}
+
+h2, .ft-2 {
+    font-size: 2.75rem
+}
+
+h3, .ft-3 {
+    font-size: 2.5rem
+}
+
+h4, .ft-4 {
+    font-size: 2rem
+}
+
+h5, .ft-5 {
+    font-size: 1.75rem
+}
+
+h6, .ft-6 {
+    font-size: 1.5rem
+}
+
+.t-justify {
+    text-align: justify;
+}
+
+.t-left {
+    text-align: left;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.t-center {
+    text-align: center;
 }
