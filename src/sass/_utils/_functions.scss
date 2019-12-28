@@ -1,0 +1,10 @@
+/// Repeat function
+@function repeat($character, $length){
+    $c: auto;
+    @if $length != 1 {
+        @for $i from 1 through $length - 1 {
+            $c: $c + ' ' + $character;
+        }        
+    }    
+    @return $c;
+}

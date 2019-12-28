@@ -1,0 +1,79 @@
+/// Set visual color button
+/// @param {Color} $first-color
+/// @param {Color} $second-color
+@mixin setButtonColor($first-color, $second-color) {
+    background-color: $first-color;        
+        &:hover {
+            background-color: $second-color;
+        }  
+        &-outline {
+            background-color: transparent;
+            border-color: $first-color;
+            color: $first-color;
+            &:hover {
+                background-color: $second-color;
+                color: $white-color;
+            }
+        }
+        &-link {
+            background-color: transparent;            
+            color: $first-color;
+            &:hover {
+                background-color: $second-color;
+                color: $white-color;
+            }
+        } 
+}
+
+/// Set Grid Length
+/// @param {Number} $length
+@mixin setGridLength($length) {
+    grid-template-columns: repeat(auto, $length)
+}
+
+/// Set Form Field
+/// @param {Direction} $direction
+/// @param {Align} $align
+/// @param {Margin} $field-margin-bottom
+/// @param {Margin} $label-margin-bottom
+/// @param {Margin} $label-margin-right
+///
+@mixin setField($direction, $align, $field-margin-bottom, $label-margin-bottom, $label-margin-right) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    margin-bottom: $field-margin-bottom;    
+    .radio, .checkbox {
+        margin: 0 .5rem 0 0;
+        &:hover {
+            cursor: pointer;
+        } 
+     }   
+    .input, .select, .textarea {
+        padding: 0.5rem;           
+        outline: 0;
+        border: 1px solid $secondary-color;
+        border-radius: .15rem;
+        transition: .15s linear;        
+        &:hover {
+            border-color: $dark-color;
+        }
+        &:focus {        
+            box-shadow: 0 0 .2rem 0 $primal-color;
+            border-color: $primal-color;
+        }        
+    }     
+    .label {
+        color: $dark-color;
+        font-weight: bold;
+        margin-bottom: $label-margin-bottom;
+        margin-right: $label-margin-right;
+    }    
+    .select option {
+        padding: .5rem 1rem;        
+    }
+    .select:hover {
+        cursor: pointer;
+    }    
+}
+
