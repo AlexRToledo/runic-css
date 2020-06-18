@@ -10,7 +10,7 @@
     }
 
     &.primary {
-        @include setButtonColor($primal-color, $primal-color-dark);                    
+        @include setButtonColor($primal-color, $primal-color-dark);                       
     }
     &.secondary {
         @include setButtonColor($secondary-color, $secondary-color-dark);         
